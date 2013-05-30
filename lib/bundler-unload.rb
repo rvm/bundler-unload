@@ -37,7 +37,7 @@ module Bundler
       Bundler.rubygems.plain_specs = rubygems_specs
     end
 
-    def temporary_load(&block)
+    def with_bundle(&block)
       rubygems_specs = Bundler.rubygems.plain_specs
       Bundler.load
       yield
