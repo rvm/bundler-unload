@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files`.split("\n")
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
 
+  s.add_development_dependency "bundler"  # do not force runtime so it can be silently ignored
   s.add_development_dependency "minitest"
   #s.add_development_dependency "smf-gem"
 end
