@@ -39,8 +39,7 @@ module Bundler
 
     def with_bundle(&block)
       rubygems_specs = Bundler.rubygems.plain_specs
-      Bundler.load
-      yield
+      block.call(Bundler.load)
     ensure
       unload!(rubygems_specs)
     end
