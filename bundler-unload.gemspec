@@ -6,6 +6,7 @@ Kernel.load File.expand_path("../lib/bundler-unload/version.rb", __FILE__)
 Gem::Specification.new do |s|
   s.name        = "bundler-unload"
   s.version     = BundlerUnload::VERSION
+  s.licenses    = ["Apache 2.0"]
   s.authors     = ["Michal Papis"]
   s.email       = ["mpapis@gmail.com"]
   s.homepage    = "https://github.com/mpapis/bundler-unload"
