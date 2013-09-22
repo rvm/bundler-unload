@@ -31,3 +31,4 @@ Allow unloading `bundler` after `Bundler.load`.
 
  - Joshua Hull
  - Carl Lerche
+ - https://github.com/quetz
