@@ -33,6 +33,7 @@ module Bundler
   class << self
     def unload!(rubygems_specs)
       @load = nil
+      @definition = nil
       ENV.replace(ORIGINAL_ENV)
       Bundler.rubygems.plain_specs = rubygems_specs
     end
